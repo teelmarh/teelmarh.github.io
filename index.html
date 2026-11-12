@@ -4,29 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Telma Aneke | Full Stack Developer (Node.js and Laravel) in Abuja, Nigeria</title>
-  <meta name="description" content="Telma Aneke (Tee) is a full stack developer in Abuja, Nigeria building backend systems in Node.js and Laravel: payments, biometrics, marketplaces and enterprise software for a national aviation regulator.">
+  <title>Telma Aneke | Full Stack Developer (Node.js and Laravel)</title>
+  <meta name="description" content="Telma Aneke (Tee) is a full stack developer building backend systems in Node.js and Laravel: payments, biometrics, marketplaces and enterprise software for a national aviation regulator.">
   <meta name="author" content="Telma Aneke">
-  <meta name="keywords" content="Telma Aneke, Tee, full stack developer, Laravel developer, Node.js developer, backend developer Nigeria, Abuja software engineer, PHP, REST API, Paystack, Remita">
+  <meta name="keywords" content="Telma Aneke, Tee, full stack developer, Laravel developer, Node.js developer, backend developer, software engineer, PHP, REST API, Paystack, Remita">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#0F172A">
+  <meta name="theme-color" content="#4B0F1F">
   <link rel="canonical" href="https://teelmarh.github.io/">
 
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Telma Aneke">
   <meta property="og:title" content="Telma Aneke | Full Stack Developer (Node.js and Laravel)">
-  <meta property="og:description" content="Backend systems, payments, biometrics and marketplaces. Serious about systems, unserious about almost everything else.">
+  <meta property="og:description" content="Backend systems, payments, biometrics and marketplaces. Serious about systems, curious about everything else.">
   <meta property="og:url" content="https://teelmarh.github.io/">
   <meta property="og:image" content="https://teelmarh.github.io/assets/img/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Telma Aneke, full stack developer">
-  <meta property="og:locale" content="en_NG">
   <meta property="profile:first_name" content="Telma">
   <meta property="profile:last_name" content="Aneke">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Telma Aneke | Full Stack Developer (Node.js and Laravel)">
-  <meta name="twitter:description" content="Backend systems, payments, biometrics and marketplaces, built in Abuja, Nigeria.">
+  <meta name="twitter:description" content="Backend systems, payments, biometrics and marketplaces.">
   <meta name="twitter:image" content="https://teelmarh.github.io/assets/img/og.png">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -77,11 +76,10 @@
         "url": "https://teelmarh.github.io/",
         "image": "https://teelmarh.github.io/assets/img/og.png",
         "email": "mailto:aneketelma123@gmail.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "Abuja", "addressRegion": "FCT", "addressCountry": "NG" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Veritas University, Abuja" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Veritas University" },
         "worksFor": [
           { "@type": "Organization", "name": "Nigeria Civil Aviation Authority" },
-          { "@type": "Organization", "name": "Catholic Creative Network" },
+          { "@type": "Organization", "name": "Catholic Creative Network", "url": "https://catholiccreativesng.com" },
           { "@type": "Organization", "name": "SIT Consulting Limited" }
         ],
         "knowsAbout": ["Laravel", "PHP", "Node.js", "JavaScript", "Python", "REST API design", "PostgreSQL", "MySQL", "MongoDB", "Payment integration", "Software testing"],
@@ -93,6 +91,8 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <a class="brand" href="#top" aria-label="Telma Aneke, home">
@@ -111,6 +111,12 @@
       <span class="mood-track" aria-hidden="true"><span class="mood-thumb"></span></span>
       <span class="mood-label mood-goofy" aria-hidden="true">Goofy</span>
     </button>
+    <button class="mood-hint" id="mood-hint" type="button" tabindex="-1" aria-hidden="true">
+      <svg viewBox="0 0 46 40" width="46" height="40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M40 36C22 36 10 27 9 6"/><path d="M2 14 9 5l8 8"/>
+      </svg>
+      <span data-goofy="too much? flip it back">too serious? flip this</span>
+    </button>
     <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
       <span></span><span></span>
     </button>
@@ -120,9 +126,12 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="top">
       <div class="hero-bg" aria-hidden="true"></div>
+      <span class="orb orb-a" aria-hidden="true"></span>
+      <span class="orb orb-b" aria-hidden="true"></span>
+      <span class="orb orb-c" aria-hidden="true"></span>
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="dot"></span>Abuja, Nigeria <span class="sep">/</span> Full stack developer</p>
+          <p class="eyebrow"><span class="dot"></span>Full stack developer <span class="sep">/</span> Node.js and Laravel</p>
           <h1 class="hero-title" data-goofy="Hi, I'm Tee.">Telma Aneke</h1>
           <p class="hero-role">
             <span data-goofy="Professional database whisperer.">Full Stack Developer, Node.js and Laravel.</span>
@@ -144,18 +153,17 @@
         </div>
 
         <div class="hero-visual">
+          <span class="halo" aria-hidden="true"></span>
           <div class="portrait">
             <span class="portrait-ring" aria-hidden="true"></span>
-            <img class="portrait-img is-serious" src="assets/img/tee-pro.webp" width="580" height="905"
+            <img class="portrait-img" src="assets/img/tee-pro.webp" width="580" height="905"
                  alt="Telma Aneke smiling with arms crossed, wearing a navy patterned jumper" fetchpriority="high">
-            <img class="portrait-img is-goofy" src="assets/img/tee-lean.webp" width="614" height="845"
-                 alt="Telma Aneke laughing with her head tilted, holding a phone" loading="lazy">
           </div>
 
           <div class="status" data-glass="rounded" data-glass-radius="26">
             <span class="status-k">Currently</span>
             <span class="status-v">System Analyst, NCAA</span>
-            <span class="status-v">Tech Team Lead, CCN</span>
+            <span class="status-v">Lead Developer, CCN</span>
           </div>
 
           <span class="sticker sticker-a" data-goofy="First-Class (I checked twice)">First-Class Honours</span>
@@ -176,7 +184,7 @@
         <p class="kicker">01 / About</p>
         <div class="about-grid">
           <div class="about-copy reveal">
-            <h2 data-goofy="Hello, I'm the one who reads the error logs.">Serious about systems. <em>Unserious about almost everything else.</em></h2>
+            <h2 data-goofy="Hello, I'm the one who reads the error logs.">Serious about systems. <em>Curious about everything else.</em></h2>
             <p>
               I'm a full stack developer with hands-on experience building backend services in
               <strong>Node.js</strong> and <strong>Laravel/PHP</strong>, wiring them into JavaScript front ends, and designing
@@ -189,15 +197,14 @@
               mistake has a paper trail. I'm comfortable in both, and I think each makes me better at the other.
             </p>
             <p class="aside">
-              Off the clock I'm curious about human and AI collaboration: how AI changes the way people decide
-              and work inside real organisations, and how to design it so it supports human judgment instead of
-              replacing it.
+              I like to research. I like learning new things and, better still, understanding the whys behind
+              how things work.
             </p>
           </div>
 
           <figure class="about-photo reveal">
             <div class="photo-card">
-              <img src="assets/img/tee-smile.webp" width="793" height="983" loading="lazy"
+              <img src="assets/img/tee-smile.webp" width="794" height="983" loading="lazy"
                    alt="Telma Aneke laughing, wearing a sage green top">
             </div>
             <figcaption data-goofy="Actual footage of me after the tests pass.">Tee, between deploys.</figcaption>
@@ -206,24 +213,24 @@
 
         <ul class="stats">
           <li class="stat reveal">
-            <span class="stat-n">3+</span>
+            <span class="stat-n"><span class="count" data-to="3">3</span>+</span>
             <span class="stat-l">years building production systems</span>
-            <span class="stat-a">and counting</span>
+            <span class="stat-a" data-goofy="and zero dropped tables">and counting</span>
           </li>
           <li class="stat reveal">
-            <span class="stat-n">4.63<small>/5.00</small></span>
+            <span class="stat-n"><span class="count" data-to="4.63" data-dec="2">4.63</span><small>/5.00</small></span>
             <span class="stat-l">CGPA, First-Class Honours</span>
-            <span class="stat-a">top 10% of the class</span>
+            <span class="stat-a" data-goofy="I checked twice">top 10% of the class</span>
           </li>
           <li class="stat reveal">
-            <span class="stat-n">1,300+</span>
+            <span class="stat-n"><span class="count" data-to="1300">1,300</span>+</span>
             <span class="stat-l">hours of full-time engineering training</span>
-            <span class="stat-a">yes, I counted</span>
+            <span class="stat-a" data-goofy="yes, I counted">full-time and remote</span>
           </li>
           <li class="stat reveal">
-            <span class="stat-n">30%</span>
+            <span class="stat-n"><span class="count" data-to="30">30</span>%</span>
             <span class="stat-l">more students in campus coding challenges</span>
-            <span class="stat-a">pizza helped</span>
+            <span class="stat-a" data-goofy="hackathons are persuasive">as GDSC core team</span>
           </li>
         </ul>
       </div>
@@ -240,8 +247,8 @@
             <div class="job-when"><span class="now">Now</span>Jan 2026 to Present</div>
             <article class="job-card">
               <header>
-                <h3>Tech Team Lead</h3>
-                <p class="job-org">Catholic Creative Network <span class="tag">Volunteer</span></p>
+                <h3>Lead Developer</h3>
+                <p class="job-org"><a href="https://catholiccreativesng.com" target="_blank" rel="noopener">Catholic Creative Network <span aria-hidden="true">&nearr;</span></a></p>
               </header>
               <ul>
                 <li>Lead the developer team building <strong>CCN Find Creative</strong>, a marketplace connecting hirers with Catholic creatives.</li>
@@ -330,16 +337,18 @@
                 <li>Organised and facilitated technical workshops and hackathons for students.</li>
                 <li>Co-ran campus-wide coding challenges that raised student participation by 30%.</li>
               </ul>
-              <p class="job-note">Lured them in with pizza, kept them with hackathons.</p>
+              <p class="job-note">Hackathons: where sleep goes to get refactored.</p>
             </article>
           </li>
         </ol>
 
-        <aside class="also reveal">
-          <h3>Also</h3>
-          <p><strong>IT Consultant, Missionary Society of St. Paul (MSP Fathers).</strong>
-            Set up the organisation's domain, evaluated institutional email providers against oversight
-            requirements, and I'm digitising the society's priest registry into structured records.</p>
+        <aside class="consult reveal">
+          <div>
+            <h3 data-goofy="Need a second brain? I rent mine out.">I could be your go-to consultant.</h3>
+            <p>Planning a build, untangling a database, or stuck on a payment integration? I take on consulting work:
+              system design, API and schema reviews, and getting stalled projects moving again.</p>
+          </div>
+          <a class="btn btn-dark" href="#contact">Let's talk <span aria-hidden="true">&rarr;</span></a>
         </aside>
       </div>
     </section>
@@ -352,22 +361,14 @@
 
         <article class="feature reveal">
           <div class="feature-body">
-            <p class="feature-meta">Featured <span class="sep">/</span> Aug to Sep 2026 <span class="sep">/</span> In pilot with real users</p>
+            <p class="feature-meta">Featured <span class="sep">/</span> In pilot with real users</p>
             <h3>DCEV: Data Capture, Enrollment and Verification</h3>
             <p>
               NCAA Nigeria's platform for enrolling and verifying aviation personnel. I built the Laravel
-              backend behind a Next.js frontend, with the biometric and payment flow running end to end.
+              backend: payments, biometric capture and identity verification, working end to end.
             </p>
-            <ul class="feature-list">
-              <li>Multi-gateway payment architecture (Paystack and Remita) using a factory/interface pattern.</li>
-              <li>Remita/TSA government payments integrated with NIN verification.</li>
-              <li>An enrollment fee split model that takes a single payment and distributes it programmatically, so users are never charged twice.</li>
-              <li>Fingerprint capture with a Digital Persona U.are.U 4500 reader, including resolving a Windows Biometric Service conflict.</li>
-              <li>Signature capture on a Huion pen tablet using the Pointer Events API.</li>
-              <li>Laravel queues for background processing, plus a planned XML/XSD and SOAP export pipeline into EMPIC EAP.</li>
-            </ul>
             <div class="chips">
-              <span>Laravel</span><span>Next.js</span><span>Paystack</span><span>Remita</span><span>Biometrics</span><span>Queues</span>
+              <span>Laravel</span><span>Next.js</span><span>Paystack</span><span>Remita</span><span>Biometrics</span>
             </div>
             <a class="link" href="https://dcev.ncaa.gov.ng" target="_blank" rel="noopener">dcev.ncaa.gov.ng <span aria-hidden="true">&nearr;</span></a>
           </div>
@@ -412,9 +413,9 @@
           <article class="card reveal">
             <p class="card-n">04</p>
             <h3>CCN Find Creative</h3>
-            <p>A marketplace connecting hirers with Catholic creatives, with escrow payments, agreements, revision requests and admin-mediated disputes. I lead the team and designed the architecture and job order lifecycle.</p>
-            <div class="chips"><span>Architecture</span><span>Escrow</span><span>Team lead</span></div>
-            <span class="link is-muted">In progress</span>
+            <p>A marketplace connecting hirers with Catholic creatives, with escrow payments, agreements, revision requests and admin-mediated disputes. As lead developer I designed the architecture and the job order lifecycle.</p>
+            <div class="chips"><span>Architecture</span><span>Escrow</span><span>Lead developer</span></div>
+            <a class="link" href="https://catholiccreativesng.com" target="_blank" rel="noopener">catholiccreativesng.com <span aria-hidden="true">&nearr;</span></a>
           </article>
 
           <article class="card reveal">
@@ -441,14 +442,14 @@
         <div class="skills-grid">
           <div class="stack-wrap reveal">
             <h2 class="section-title" data-goofy="My stack. Literally stacked.">The stack, literally.</h2>
-            <p class="stack-sub">Six layers, heaviest at the top, like all good architecture diagrams and no good cakes.</p>
+            <p class="stack-sub" data-goofy="Six layers, heaviest at the top, like all good architecture diagrams and no good cakes.">The six layers I work in most, from framework to deploy.</p>
             <ol class="stack" aria-label="Core stack">
-              <li style="--c:#0F172A;--t:#F8FAFC"><span>01</span>Laravel and PHP</li>
-              <li style="--c:#334155;--t:#F8FAFC"><span>02</span>Node.js and JavaScript</li>
-              <li style="--c:#64748B;--t:#F8FAFC"><span>03</span>PostgreSQL, MySQL, MongoDB</li>
-              <li style="--c:#94A3B8;--t:#0F172A"><span>04</span>REST API design</li>
-              <li style="--c:#E2E8F0;--t:#0F172A"><span>05</span>Testing and QA</li>
-              <li style="--c:#F8FAFC;--t:#0F172A"><span>06</span>Git, deploys, staying calm</li>
+              <li style="--c:#4B0F1F;--t:#FFFCFA"><span>01</span>Laravel and PHP</li>
+              <li style="--c:#7A3F56;--t:#FFFCFA"><span>02</span>Node.js and JavaScript</li>
+              <li style="--c:#B78793;--t:#4B0F1F"><span>03</span>PostgreSQL, MySQL, MongoDB</li>
+              <li style="--c:#E8C9D0;--t:#4B0F1F"><span>04</span>REST API design</li>
+              <li style="--c:#F7EFEF;--t:#4B0F1F"><span>05</span>Testing and QA</li>
+              <li style="--c:#FFFCFA;--t:#4B0F1F"><span>06</span>Git, deploys, staying calm</li>
             </ol>
           </div>
 
@@ -491,7 +492,7 @@
           <article class="edu reveal">
             <p class="edu-when">Oct 2019 to Jul 2023</p>
             <h3>B.Sc. Computer Science, First-Class Honours</h3>
-            <p class="job-org">Veritas University, Abuja</p>
+            <p class="job-org">Veritas University</p>
             <p>CGPA 4.63 / 5.00, top 10% of the graduating class. Final-year project: a perimeter intrusion detection system on an Arduino microcontroller.</p>
           </article>
           <article class="edu reveal">
@@ -503,8 +504,8 @@
           <article class="edu reveal">
             <p class="edu-when">2019</p>
             <h3>Best Graduating Student</h3>
-            <p class="job-org">Regina Pacis Girls' Secondary School, Garki, Abuja</p>
-            <p>The original overachievement. Everything since has been a sequel.</p>
+            <p class="job-org">Regina Pacis Girls' Secondary School</p>
+            <p data-goofy="The original overachievement. Everything since has been a sequel.">Top of the graduating class.</p>
           </article>
         </div>
       </div>
@@ -517,7 +518,7 @@
         <div class="contact-copy reveal">
           <p class="kicker">06 / Contact</p>
           <h2 data-goofy="Go on, send the email. I'm nice.">Let's build something that works on the first deploy.</h2>
-          <p class="contact-sub"><em>Or the second. I'm honest about these things.</em></p>
+          <p class="contact-sub"><em data-goofy="Or the second. I'm honest about these things.">Backend, APIs, payments, or a second opinion on your system design.</em></p>
           <a class="mail" href="mailto:aneketelma123@gmail.com">aneketelma123@gmail.com</a>
           <ul class="socials">
             <li><a href="https://github.com/teelmarh" target="_blank" rel="me noopener">GitHub <span aria-hidden="true">&nearr;</span></a></li>
@@ -527,8 +528,6 @@
         </div>
         <div class="contact-visual reveal">
           <canvas class="big-logo" data-liquid-logo width="900" height="430" role="img" aria-label="tee. wordmark in liquid metal"></canvas>
-          <img class="contact-photo" src="assets/img/tee-laugh.webp" width="595" height="852" loading="lazy"
-               alt="Telma Aneke laughing, head tilted">
         </div>
       </div>
     </section>
@@ -536,7 +535,7 @@
 
   <footer class="footer">
     <div class="wrap footer-row">
-      <p>&copy; <span id="year">2026</span> Telma Aneke. Built with plain HTML, CSS and JavaScript. No frameworks were harmed.</p>
+      <p>&copy; <span id="year">2026</span> Telma Aneke</p>
       <a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
     </div>
   </footer>
