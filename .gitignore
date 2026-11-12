@@ -1,0 +1,7 @@
+# original photos stay on this machine, only the cutouts are published
+assets/img/raw/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.claude/
