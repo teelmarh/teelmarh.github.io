@@ -3,7 +3,7 @@
   "short_name": "Tee",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#4B0F1F",
-  "theme_color": "#4B0F1F",
+  "background_color": "#0F1B3D",
+  "theme_color": "#0F1B3D",
   "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
 }

@@ -53,7 +53,7 @@
       width: document.documentElement.clientWidth,
       height: Math.ceil(hero.offsetTop + hero.offsetHeight),
       windowWidth: document.documentElement.clientWidth,
-      backgroundColor: '#4B0F1F',
+      backgroundColor: '#0F1B3D',
       logging: false,
       onclone: function (doc) {
         doc.documentElement.classList.add('snap');

@@ -1,6 +1,6 @@
 # Telma Aneke: portfolio
 
-Personal portfolio for Telma Aneke (Tee), full stack developer (Node.js and Laravel).
+Personal portfolio for Telma Aneke (Tee), full stack developer and API engineer.
 
 Plain HTML, CSS and JavaScript. No build step: open `index.html` or serve the folder.
 
@@ -13,7 +13,7 @@ python -m http.server 4173
 | Path | Purpose |
 | --- | --- |
 | `index.html` | The whole site, with SEO meta tags and JSON-LD |
-| `assets/css/style.css` | Styles (burgundy and rose palette, serious and goofy modes) |
+| `assets/css/style.css` | Styles (navy and white palette with hot pink highlights, serious and goofy modes) |
 | `assets/js/main.js` | Mood toggle, menu, scroll reveals, liquid logo setup |
 | `assets/js/glass.js` | Wires liquid glass into the hero buttons and status card |
 | `assets/vendor/liquid-glass/` | [dashersw/liquid-glass-js](https://github.com/dashersw/liquid-glass-js) (MIT) |

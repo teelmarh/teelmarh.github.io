@@ -13,31 +13,31 @@ def font(name: str, size: int) -> ImageFont.FreeTypeFont:
 
 
 def main() -> None:
-    canvas = Image.new("RGB", (W, H), "#4B0F1F")
-    glow = Image.new("RGB", (W, H), "#4B0F1F")
+    canvas = Image.new("RGB", (W, H), "#0F1B3D")
+    glow = Image.new("RGB", (W, H), "#0F1B3D")
     g = ImageDraw.Draw(glow)
-    for r, c in ((520, "#5E2136"), (400, "#7A3F56"), (280, "#874C66")):
+    for r, c in ((520, "#1B2850"), (400, "#2A3763"), (280, "#3A4775")):
         g.ellipse((900 - r, 380 - r, 900 + r, 380 + r), fill=c)
     from PIL import ImageFilter
     canvas = glow.filter(ImageFilter.GaussianBlur(90))
     d = ImageDraw.Draw(canvas)
 
     # arch + portrait
-    d.rounded_rectangle((760, 120, 1120, 700), radius=180, fill="#96607A", outline="#DDB5BE", width=2)
+    d.rounded_rectangle((760, 120, 1120, 700), radius=180, fill="#DDE2F0", outline="#FFFFFF", width=2)
     photo = Image.open(IMG / "tee-pro.webp").convert("RGBA")
     ph = 600
     photo = photo.resize((int(photo.width * ph / photo.height), ph), Image.LANCZOS)
     canvas.paste(photo, (940 - photo.width // 2, H - ph + 20), photo)
 
     d = ImageDraw.Draw(canvas)
-    d.rounded_rectangle((72, 78, 470, 118), radius=20, outline="#874C66", width=2)
-    d.text((92, 86), "FULL STACK DEVELOPER  /  NODE.JS AND LARAVEL", font=font("consola.ttf", 15), fill="#E8C9D0")
-    d.text((66, 150), "Telma", font=font("seguibl.ttf", 132), fill="#FFFCFA")
-    d.text((66, 280), "Aneke", font=font("seguibl.ttf", 132), fill="#FFFCFA")
-    d.text((72, 452), "Full Stack Developer, Node.js and Laravel", font=font("segoeuib.ttf", 32), fill="#E8C9D0")
-    d.text((72, 500), "Serious about systems. Curious about everything else.", font=font("georgiai.ttf", 28), fill="#B78793")
-    for i, c in enumerate(["#FFFCFA", "#E8C9D0", "#B78793", "#96607A", "#7A3F56"]):
-        d.rounded_rectangle((72 + i * 46, 566, 128 + i * 46, 588), radius=11, fill=c, outline="#4B0F1F")
+    d.rounded_rectangle((72, 78, 410, 118), radius=20, outline="#3A4775", width=2)
+    d.text((92, 86), "FULL STACK DEVELOPER  /  API ENGINEER", font=font("consola.ttf", 15), fill="#DDE2F0")
+    d.text((66, 150), "Telma", font=font("seguibl.ttf", 132), fill="#FFFFFF")
+    d.text((66, 280), "Aneke", font=font("seguibl.ttf", 132), fill="#FFFFFF")
+    d.text((72, 452), "I build and manage APIs teams can rely on.", font=font("segoeuib.ttf", 32), fill="#DDE2F0")
+    d.text((72, 500), "Serious about systems. Curious about everything else.", font=font("georgiai.ttf", 28), fill="#9AA5C4")
+    for i, c in enumerate(["#FF3D8B", "#FFFFFF", "#DDE2F0", "#9AA5C4", "#5B678C"]):
+        d.rounded_rectangle((72 + i * 46, 566, 128 + i * 46, 588), radius=11, fill=c, outline="#0F1B3D")
     canvas.save(IMG / "og.png", optimize=True)
     print("og.png", (IMG / "og.png").stat().st_size // 1024, "KB")
 

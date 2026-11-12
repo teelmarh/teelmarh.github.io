@@ -40,7 +40,7 @@
     window.dispatchEvent(new CustomEvent('moodchange', { detail: mood }));
   }
 
-  var COLORS = ['#4B0F1F', '#7A3F56', '#B78793', '#E8C9D0', '#F7EFEF', '#FFFCFA'];
+  var COLORS = ['#0F1B3D', '#2A3763', '#FF3D8B', '#DDE2F0', '#FFFFFF', '#FF3D8B'];
   function pillRain() {
     for (var i = 0; i < 26; i++) {
       var pill = document.createElement('span');
